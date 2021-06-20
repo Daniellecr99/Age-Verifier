@@ -11,7 +11,7 @@
 
 <body>
     <div id="myform">
-      <form method="GET">
+  <form > 
             <label for="ordername">Name:</label>
             <input type="name" name="ordername" id="ordername" required maxlength="20" minlength="5">
             <br>
@@ -24,15 +24,29 @@
             <input type="text" name="phone" id="phone" pattern="[0-9]{9,12}">
             <br>
             <br>
-            <label for="ordernumber">Number of CBD tinctures:</label>
-            <input type="number" name="ordernumber" id="ordernumber" required min="1" max="10">
+           
+            <label for="ordernumber">Number of 1000 mg CBD tinctures ($23.50 each):</label>
+         
+            <input type="number" name="ordernumber" id="ordernumber" required  max="10">
+            <br>
+            <br>
+            
+            <label for="ordernumber2">Number of 800 mg CBD tinctures ($21.50 each):</label>
+        
+            <input type="number" name="ordernumber2" id="ordernumber2" required  max="10">
+            <br>
+            <br>
+            
+            <label for="ordernumber3">Number of 600 mg CBD tinctures ($20.00 each):</label>
+         
+            <input type="number" name="ordernumber3" id="ordernumber3" required  max="10">
             <br>
             <br>
             <button type="submit" onsubmit="orderForm ()">Submit</button>
-    
-        </form>
+     </form>
+      
     </div>
-
+    <div id="results"></div>
     <script src="orderform.js" ></script>
 </body>
 
