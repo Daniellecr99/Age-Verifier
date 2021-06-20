@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="form.css" type="text/css">
 </head>
 
 <body>
     <div id="myform">
-      
+      <form method="GET" action="https://daniellecr99.github.io/Age-Verifier/ordersubmit.html">
             <label for="ordername">Name:</label>
             <input type="name" name="ordername" id="ordername" required maxlength="20" minlength="5">
             <br>
@@ -27,9 +28,9 @@
             <input type="number" name="ordernumber" id="ordernumber" required min="1" max="10">
             <br>
             <br>
-            <button onclick="orderForm ()">Submit</button>
+            <button onsubmit="orderForm ()">Submit</button>
     
-
+        </form>
     </div>
 
     <script src="orderform.js" ></script>
